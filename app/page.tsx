@@ -67,7 +67,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col items-center h-screen w-full bg-white">
+    <div className="flex min-h-screen flex-col items-center w-screen bg-white">
       {/* Navigation */}
       <nav className="flex items-center justify-between w-full px-4 py-3 bg-white border-b md:px-6 lg:px-8 border-gray-900/5">
         <div className="flex items-center gap-2 sm:gap-4">
@@ -87,44 +87,46 @@ export default function Home() {
         <NavigationMenu />
       </nav>
 
-      {/* Hero Section */}
-      <section className="w-full px-4 pt-10 pb-6 h-106 bg-white md:px-8 lg:px-16 xl:px-26 md:pt-16 lg:pt-20">
-        <div className="flex flex-col gap-3 md:gap-4 max-w-198">
-          <p className="text-sm md:text-lg font-normal leading-5 md:leading-6 tracking-[0.18px] uppercase text-[#cab777]">
-            Online Leadership Training
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight md:leading-[1.1] lg:leading-15 tracking-[-0.5px] md:tracking-[-1.8px] text-gray-900 font-reckless">
-            First Presbyterian Midland Training
-            {/* <br className="hidden sm:block" />
+      <main className="flex w-full flex-col">
+        {/* Hero Section */}
+        <section className="w-full px-4 pt-10 pb-6 h-54 lg:h-106 bg-white md:px-8 lg:px-16 xl:px-26 md:pt-16 lg:pt-20">
+          <div className="flex flex-col gap-3 md:gap-4 max-w-198">
+            <p className="text-sm md:text-lg font-normal leading-5 md:leading-6 tracking-[0.18px] uppercase text-[#cab777]">
+              Online Leadership Training
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight md:leading-[1.1] lg:leading-15 tracking-[-0.5px] md:tracking-[-1.8px] text-gray-900 font-reckless">
+              First Presbyterian Midland Training
+              {/* <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
             Sit Consectetur */}
-          </h1>
-          <p className="text-sm font-normal leading-5 text-gray-900 md:text-base md:leading-6">
-            Training resources designed to support and equip First Presbyterian Midland leaders.
-          </p>
-        </div>
-      </section>
-
-      {/* Courses Section */}
-      <section className="flex flex-col w-full h-auto gap-6 px-4 pb-12 md:px-8 lg:px-16 xl:px-26 md:pb-18">
-        {courses.map((course, index) => (
-          <div key={course.id}>
-            <CourseCollapsibleCard
-              title={course.title}
-              description={course.description}
-              imageUrl={course.imageUrl}
-              modules={course.modules}
-              defaultOpen={index === 1}
-            />
-            {index < courses.length - 1 && (
-              <div className="w-full h-px my-4 bg-gray-200 md:my-6" />
-            )}
+            </h1>
+            <p className="text-sm font-normal leading-5 text-gray-900 md:text-base md:leading-6">
+              Training resources designed to support and equip First Presbyterian
+              Midland leaders.
+            </p>
           </div>
-        ))}
-      </section>
+        </section>
 
-      {/* Features Section */}
-      {/* <section className="w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-[#f7f7f7] flex flex-col gap-8 md:gap-10">
+        {/* Courses Section */}
+        <section className="flex flex-col w-full h-auto gap-6 px-4 pb-12 md:px-8 lg:px-16 xl:px-26 md:pb-18">
+          {courses.map((course, index) => (
+            <div key={course.id}>
+              <CourseCollapsibleCard
+                title={course.title}
+                description={course.description}
+                imageUrl={course.imageUrl}
+                modules={course.modules}
+                defaultOpen={index === 1}
+              />
+              {index < courses.length - 1 && (
+                <div className="w-full h-px my-4 bg-gray-200 md:my-6" />
+              )}
+            </div>
+          ))}
+        </section>
+
+        {/* Features Section */}
+        {/* <section className="w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-[#f7f7f7] flex flex-col gap-8 md:gap-10">
         <div className="flex flex-col gap-3 md:gap-4">
           <p className="text-sm md:text-lg font-normal leading-5 md:leading-6 tracking-[0.18px] uppercase text-[#cab777]">
             LOREM IPSUM DOLOR
@@ -179,21 +181,23 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-              {/* Powered By */}
-              <section className="bottom-0 z-50 w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-gray-100 flex flex-col gap-8 md:gap-10">
-                <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
-                  <p className="text-sm font-normal leading-5 text-gray-500 md:text-base md:leading-6">
-                    This learning experience is powered by:
-                  </p>
-                  <Image
-                    src="/fullerEquip_Logo.png"
-                    alt="Fuller Equip"
-                    width={80}
-                    height={24}
-                    className="h-5 w-auto sm:h-6"
-                  />
-                </div>
-              </section>
+      </main>
+
+      {/* Powered By */}
+      <footer className="mt-auto w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-gray-100 flex flex-col gap-8 md:gap-10">
+        <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
+          <p className="text-sm font-normal leading-5 text-gray-500 md:text-base md:leading-6">
+            This learning experience is powered by:
+          </p>
+          <Image
+            src="/fullerEquip_Logo.png"
+            alt="Fuller Equip"
+            width={80}
+            height={24}
+            className="h-5 w-auto sm:h-6"
+          />
+        </div>
+      </footer>
     </div>
   );
 }
