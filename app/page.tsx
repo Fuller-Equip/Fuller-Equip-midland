@@ -13,82 +13,61 @@ export default function Home() {
   const courses = [
     {
       id: "course-1",
-      title: "Lorem Ipsum Dolor Sit Consectetur",
+      title: "Church Board Leadership Essentials",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/midland/midland1.png",
-      modules: [
-        {
-          id: "module-1",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-        {
-          id: "module-2",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-        {
-          id: "module-3",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-        {
-          id: "module-4",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-      ],
-    },
-    {
-      id: "course-2",
-      title: "Lorem Ipsum Dolor Sit Consectetur",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/midland/midland2.png",
-      modules: [
-        {
-          id: "module-1",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-        {
-          id: "module-2",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-        {
-          id: "module-3",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-        {
-          id: "module-4",
-          title: "Lorem Ipsum Dolor Sit Consectetur",
-          duration: "Approx. 2 Hours",
-        },
-      ],
-    },
-    {
-      id: "course-3",
-      title: "Lorem Ipsum Dolor Sit Consectetur",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/midland/midland3.png",
+        "This course, led by Dr. Scott Cormode of Fuller Seminary, provides a foundational guide for church elders to develop a leadership posture rooted in humility, listening, and emotional intelligence. It outlines the structural, relational, and spiritual responsibilities essential for serving on a church board while offering practical skills for navigating conflict and shepherding a congregation.",
+      imageUrl: "/midland/Midland-BoardLeadership1-Thumbnail.png",
       modules: [],
     },
-    {
-      id: "course-4",
-      title: "Lorem Ipsum Dolor Sit Consectetur",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/midland/midland4.png",
-      modules: [],
-    },
+    // {
+    //   id: "course-2",
+    //   title: "Lorem Ipsum Dolor Sit Consectetur",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   imageUrl: "/midland/midland2.png",
+    //   modules: [
+    //     {
+    //       id: "module-1",
+    //       title: "Lorem Ipsum Dolor Sit Consectetur",
+    //       duration: "Approx. 2 Hours",
+    //     },
+    //     {
+    //       id: "module-2",
+    //       title: "Lorem Ipsum Dolor Sit Consectetur",
+    //       duration: "Approx. 2 Hours",
+    //     },
+    //     {
+    //       id: "module-3",
+    //       title: "Lorem Ipsum Dolor Sit Consectetur",
+    //       duration: "Approx. 2 Hours",
+    //     },
+    //     {
+    //       id: "module-4",
+    //       title: "Lorem Ipsum Dolor Sit Consectetur",
+    //       duration: "Approx. 2 Hours",
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: "course-3",
+    //   title: "Lorem Ipsum Dolor Sit Consectetur",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   imageUrl: "/midland/midland3.png",
+    //   modules: [],
+    // },
+    // {
+    //   id: "course-4",
+    //   title: "Lorem Ipsum Dolor Sit Consectetur",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   imageUrl: "/midland/midland4.png",
+    //   modules: [],
+    // },
   ];
 
   return (
-    <div className="flex flex-col items-start w-full bg-white">
+    <div className="flex flex-col items-center h-screen w-full bg-white">
       {/* Navigation */}
       <nav className="flex items-center justify-between w-full px-4 py-3 bg-white border-b md:px-6 lg:px-8 border-gray-900/5">
         <div className="flex items-center gap-2 sm:gap-4">
@@ -109,7 +88,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="w-full px-4 pt-10 pb-6 bg-white md:px-8 lg:px-16 xl:px-26 md:pt-16 lg:pt-20">
+      <section className="w-full px-4 pt-10 pb-6 h-106 bg-white md:px-8 lg:px-16 xl:px-26 md:pt-16 lg:pt-20">
         <div className="flex flex-col gap-3 md:gap-4 max-w-198">
           <p className="text-sm md:text-lg font-normal leading-5 md:leading-6 tracking-[0.18px] uppercase text-[#cab777]">
             Online Leadership Training
@@ -128,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Courses Section */}
-      <section className="flex flex-col w-full gap-6 px-4 pb-12 md:px-8 lg:px-16 xl:px-26 md:pb-18">
+      <section className="flex flex-col w-full h-auto gap-6 px-4 pb-12 md:px-8 lg:px-16 xl:px-26 md:pb-18">
         {courses.map((course, index) => (
           <div key={course.id}>
             <CourseCollapsibleCard
@@ -146,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-[#f7f7f7] flex flex-col gap-8 md:gap-10">
+      {/* <section className="w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-[#f7f7f7] flex flex-col gap-8 md:gap-10">
         <div className="flex flex-col gap-3 md:gap-4">
           <p className="text-sm md:text-lg font-normal leading-5 md:leading-6 tracking-[0.18px] uppercase text-[#cab777]">
             LOREM IPSUM DOLOR
@@ -160,9 +139,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 3 Column Features - Stack on mobile */}
         <div className="flex flex-col w-full max-w-6xl gap-4 md:flex-row md:gap-6 lg:gap-8">
-          {/* Feature 1 - Blue */}
           <div className="flex-1 bg-white border-t-4 border-[#6c83b0] px-4 md:px-6 py-6 md:py-10">
             <div className="flex flex-col gap-4 md:justify-between md:h-auto lg:h-64.75">
               <h3 className="text-xl font-medium leading-7 text-gray-900 md:text-2xl md:leading-8 font-reckless">
@@ -176,7 +153,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Feature 2 - Gold */}
           <div className="flex-1 bg-white border-t-4 border-[#cab777] px-4 md:px-6 py-6 md:py-10">
             <div className="flex flex-col gap-4 md:justify-between md:h-auto lg:h-64.75">
               <h3 className="text-xl font-medium leading-7 text-gray-900 md:text-2xl md:leading-8 font-reckless">
@@ -190,7 +166,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Feature 3 - Dark Blue */}
           <div className="flex-1 bg-white border-t-4 border-[#013e79] px-4 md:px-6 py-6 md:py-10">
             <div className="flex flex-col gap-4 md:justify-between md:h-auto lg:h-64.75">
               <h3 className="text-xl font-medium leading-7 text-gray-900 md:text-2xl md:leading-8 font-reckless">
@@ -204,21 +179,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Powered By */}
-        <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
-          <p className="text-sm font-normal leading-5 text-gray-500 md:text-base md:leading-6">
-            This learning experience is powered by:
-          </p>
-          <Image
-            src="/fullerEquip_Logo.png"
-            alt="Fuller Equip"
-            width={80}
-            height={24}
-            className="h-5 w-auto sm:h-6"
-          />
-        </div>
-      </section>
+      </section> */}
+              {/* Powered By */}
+              <section className="bottom-0 z-50 w-full px-4 md:px-8 lg:px-16 xl:px-26 py-10 md:py-16 lg:py-20 bg-gray-100 flex flex-col gap-8 md:gap-10">
+                <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
+                  <p className="text-sm font-normal leading-5 text-gray-500 md:text-base md:leading-6">
+                    This learning experience is powered by:
+                  </p>
+                  <Image
+                    src="/fullerEquip_Logo.png"
+                    alt="Fuller Equip"
+                    width={80}
+                    height={24}
+                    className="h-5 w-auto sm:h-6"
+                  />
+                </div>
+              </section>
     </div>
   );
 }
