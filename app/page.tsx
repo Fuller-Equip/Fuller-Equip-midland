@@ -94,14 +94,13 @@ export default function Home() {
             Online Leadership Training
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight md:leading-[1.1] lg:leading-15 tracking-[-0.5px] md:tracking-[-1.8px] text-gray-900 font-reckless">
-            Lorem ipsum Dolor
-            <br className="hidden sm:block" />
+            First Presbyterian Midland Training
+            {/* <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
-            Sit Consectetur
+            Sit Consectetur */}
           </h1>
           <p className="text-sm font-normal leading-5 text-gray-900 md:text-base md:leading-6">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit t et massa
-            mi..
+            Training resources designed to support and equip First Presbyterian Midland leaders.
           </p>
         </div>
       </section>
