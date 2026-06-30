@@ -18,6 +18,18 @@ export default function Home() {
         "This course, led by Dr. Scott Cormode of Fuller Seminary, provides a foundational guide for church elders to develop a leadership posture rooted in humility, listening, and emotional intelligence. It outlines the structural, relational, and spiritual responsibilities essential for serving on a church board while offering practical skills for navigating conflict and shepherding a congregation.",
       imageUrl: "/midland/Midland-BoardLeadership1-Thumbnail.png",
       modules: [],
+      courseUrl:
+        "http://modules.fuller.edu/demo/midland-pres/church-board-leadership-essentials/scormcontent",
+    },
+    {
+      id: "course-2",
+      title: "Youth Ministry Volunteer Essentials",
+      description:
+        "The Youth Ministry Volunteer Essentials course trains and empowers you to effectively serve teens during these formative years.",
+      imageUrl: "/midland/midland2.png",
+      modules: [],
+      courseUrl:
+        "https://modules.fuller.edu/demo/midland-pres/youth-ministry-volunteer-essential/scormcontent",
     },
     // {
     //   id: "course-2",
@@ -101,8 +113,8 @@ export default function Home() {
             Sit Consectetur */}
             </h1>
             <p className="text-sm font-normal leading-5 text-gray-900 md:text-base md:leading-6">
-              Training resources designed to support and equip First Presbyterian
-              Midland leaders.
+              Training resources designed to support and equip First
+              Presbyterian Midland leaders.
             </p>
           </div>
         </section>
@@ -116,6 +128,7 @@ export default function Home() {
                 description={course.description}
                 imageUrl={course.imageUrl}
                 modules={course.modules}
+                courseUrl={course.courseUrl}
                 defaultOpen={index === 1}
               />
               {index < courses.length - 1 && (

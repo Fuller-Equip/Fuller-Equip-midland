@@ -21,6 +21,7 @@ interface CourseCollapsibleCardProps {
   description: string;
   imageUrl: string;
   modules: Module[];
+  courseUrl: string;
   defaultOpen?: boolean;
 }
 
@@ -68,6 +69,7 @@ export function CourseCollapsibleCard({
   description,
   imageUrl,
   modules,
+  courseUrl = "",
   defaultOpen = false,
 }: CourseCollapsibleCardProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
@@ -101,7 +103,13 @@ export function CourseCollapsibleCard({
               {description}
             </p>
           </div>
-          <Link href="http://modules.fuller.edu/demo/midland-pres/church-board-leadership-essentials/scormcontent" target="_blank" className="inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 py-1.5 md:py-2 bg-black rounded-full shadow-sm text-[10px] md:text-xs font-semibold leading-4 text-white uppercase hover:bg-gray-900 transition-colors w-32">View Course</Link>
+          <Link
+            href={courseUrl}
+            target="_blank"
+            className="inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 py-1.5 md:py-2 bg-black rounded-full shadow-sm text-[10px] md:text-xs font-semibold leading-4 text-white uppercase hover:bg-gray-900 transition-colors w-32"
+          >
+            View Course
+          </Link>
           {/* Toggle Button */}
           {hasModules && (
             <CollapsibleTrigger asChild>
