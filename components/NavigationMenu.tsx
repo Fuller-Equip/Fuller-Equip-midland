@@ -20,7 +20,7 @@ export function NavigationMenu() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button
-          className="flex items-center justify-center w-6 h-6 transition-opacity hover:opacity-70"
+          className="flex items-center cursor-pointer justify-center w-6 h-6 transition-opacity hover:opacity-70"
           aria-label="Navigation menu"
         >
           <Menu className="w-6 h-6 text-gray-900" />
@@ -28,7 +28,10 @@ export function NavigationMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuItem asChild>
-          <Link href="https://www.fullerequip.com" className="flex items-center gap-2 cursor-pointer">
+          <Link
+            href="https://fullerequip.com"
+            className="flex items-center gap-2 cursor-pointer"
+          >
             <Home className="w-4 h-4" />
             <span>Go to Fuller Equip</span>
           </Link>
