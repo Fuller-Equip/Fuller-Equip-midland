@@ -88,46 +88,54 @@ export default function Home() {
     description: (
       <>
         <p>
-          Make a Lasting Kingdom Impact: Become an Essential Voice in a
-          Child&apos;s Faith Journey
+          In the course, Children's Ministry Volunteer Essentials, learn ways to
+          positively impact children that last beyond Sunday morning.
         </p>
-        <p>
-          Research suggests that for important faith messages to
-          &quot;stick,&quot; children need to hear them repeatedly from many
-          trusted adults. In this course,{" "}
-          <strong className="font-semibold text-gray-900">
-            Children&apos;s Ministry Volunteer Essentials
-          </strong>
-          , you&apos;ll discover how to positively contribute to
-          children&apos;s spiritual growth in ways that last far beyond Sunday
-          morning.
-        </p>
-        <p>
-          Join{" "}
-          <strong className="font-semibold text-gray-900">
-            Meredith Miller
-          </strong>
-          , a pastor and writer with over 20 years of experience, as you learn
-          to recognize developmental stages, prepare transformational lessons,
-          and create meaningful conversations that help kids get to know God.
-        </p>
-        <p>Course Highlights</p>
-        <ul>
-          <li>
-            Understand your unique role as a mentor in a child&apos;s spiritual
-            ecosystem.
-          </li>
-          <li>
-            Identify and adapt to different stages of childhood development to
-            make your teaching more effective.
-          </li>
-          <li>
-            Learn actionable ways to prepare lessons, facilitate discussion,
-            and support families with confidence and joy starting this week.
-          </li>
-        </ul>
       </>
     ),
+    // description: (
+    //   <>
+    //     <p>
+    //       Make a Lasting Kingdom Impact: Become an Essential Voice in a
+    //       Child&apos;s Faith Journey
+    //     </p>
+    //     <p>
+    //       Research suggests that for important faith messages to
+    //       &quot;stick,&quot; children need to hear them repeatedly from many
+    //       trusted adults. In this course,{" "}
+    //       <strong className="font-semibold text-gray-900">
+    //         Children&apos;s Ministry Volunteer Essentials
+    //       </strong>
+    //       , you&apos;ll discover how to positively contribute to
+    //       children&apos;s spiritual growth in ways that last far beyond Sunday
+    //       morning.
+    //     </p>
+    //     <p>
+    //       Join{" "}
+    //       <strong className="font-semibold text-gray-900">
+    //         Meredith Miller
+    //       </strong>
+    //       , a pastor and writer with over 20 years of experience, as you learn
+    //       to recognize developmental stages, prepare transformational lessons,
+    //       and create meaningful conversations that help kids get to know God.
+    //     </p>
+    //     <p>Course Highlights</p>
+    //     <ul>
+    //       <li>
+    //         Understand your unique role as a mentor in a child&apos;s spiritual
+    //         ecosystem.
+    //       </li>
+    //       <li>
+    //         Identify and adapt to different stages of childhood development to
+    //         make your teaching more effective.
+    //       </li>
+    //       <li>
+    //         Learn actionable ways to prepare lessons, facilitate discussion,
+    //         and support families with confidence and joy starting this week.
+    //       </li>
+    //     </ul>
+    //   </>
+    // ),
     imageUrl: "/midland/midland3.png",
     courses: [
       {
