@@ -35,6 +35,16 @@ export default function Home() {
       courseUrl:
         "https://modules.fuller.edu/demo/midland-pres/youth-ministry-volunteer-essential/scormcontent",
     },
+    {
+      id: "course-3",
+      title: "How to Lead a Small Group",
+      description:
+        "In the course, How to Lead a Small Group, learn practical skills and spiritual insights to organize a small group that promotes authenticity and sharpens members’ faith in Jesus.",
+      imageUrl: "/midland/small-group-thumbnail.png",
+      modules: [],
+      courseUrl:
+        "https://modules.fuller.edu/demo/midland-pres/small-group/scormcontent/",
+    },
     // {
     //   id: "course-2",
     //   title: "Lorem Ipsum Dolor Sit Consectetur",
