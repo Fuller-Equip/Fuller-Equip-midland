@@ -21,7 +21,8 @@ interface CourseCollapsibleCardProps {
   description: string;
   imageUrl: string;
   modules: Module[];
-  courseUrl: string;
+  /** Omit (or leave empty) while the course is not yet published — renders a disabled "Coming Soon" button. */
+  courseUrl?: string;
   defaultOpen?: boolean;
 }
 
@@ -74,6 +75,7 @@ export function CourseCollapsibleCard({
 }: CourseCollapsibleCardProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const hasModules = modules.length > 0;
+  const isComingSoon = courseUrl.trim() === "";
 
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen}>
@@ -103,13 +105,24 @@ export function CourseCollapsibleCard({
               {description}
             </p>
           </div>
-          <Link
-            href={courseUrl}
-            target="_blank"
-            className="inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 py-1.5 md:py-2 bg-black rounded-full shadow-sm text-[10px] md:text-xs font-semibold leading-4 text-white uppercase hover:bg-gray-900 transition-colors w-32"
-          >
-            View Course
-          </Link>
+          {isComingSoon ? (
+            <button
+              type="button"
+              disabled
+              aria-disabled="true"
+              className="inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 py-1.5 md:py-2 bg-black rounded-full shadow-sm text-[10px] md:text-xs font-semibold leading-4 text-white uppercase cursor-not-allowed w-32"
+            >
+              Coming Soon
+            </button>
+          ) : (
+            <Link
+              href={courseUrl}
+              target="_blank"
+              className="inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 py-1.5 md:py-2 bg-black rounded-full shadow-sm text-[10px] md:text-xs font-semibold leading-4 text-white uppercase hover:bg-gray-900 transition-colors w-32"
+            >
+              View Course
+            </Link>
+          )}
           {/* Toggle Button */}
           {hasModules && (
             <CollapsibleTrigger asChild>

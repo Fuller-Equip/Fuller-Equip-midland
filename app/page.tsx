@@ -92,13 +92,25 @@ export default function Home() {
     // },
   ];
 
+  // Rendered last, below the course group — no courseUrl yet, so the card shows
+  // a disabled "Coming Soon" button instead of "View Course".
+  const comingSoonCourse = {
+    id: "course-4",
+    title: "Living on Mission in Your Community",
+    description:
+      "In this Living on Mission in Your Community course, you will learn from experts (including authors, entrepreneurs, private and public-sector leaders, and more) as they share practical ways to live out Christ’s call to serve others by recognizing and meeting the needs of the people in your local community.",
+    imageUrl: "/midland/living-on-mission-thumbnail.png",
+    modules: [],
+    courseUrl: "",
+  };
+
   const childrensMinistryGroup: CourseGroup = {
     label: "Course",
     title: "Children's Ministry Volunteer Essentials",
     description: (
       <>
         <p>
-          In the course, Children's Ministry Volunteer Essentials, learn ways to
+          In the course, Children&apos;s Ministry Volunteer Essentials, learn ways to
           positively impact children that last beyond Sunday morning.
         </p>
       </>
@@ -291,6 +303,15 @@ export default function Home() {
 
           {/* Course Group — expands to list its courses */}
           <CourseGroupCard group={childrensMinistryGroup} />
+
+          <div className="w-full h-px my-4 bg-gray-200 md:my-6" />
+          <CourseCollapsibleCard
+            title={comingSoonCourse.title}
+            description={comingSoonCourse.description}
+            imageUrl={comingSoonCourse.imageUrl}
+            modules={comingSoonCourse.modules}
+            courseUrl={comingSoonCourse.courseUrl}
+          />
         </section>
 
         {/* Features Section */}
